@@ -2,8 +2,8 @@ import { defineConfig } from "tinacms";
 
 export default defineConfig({
   branch: 'main',
-  clientId: null, // isi nanti setelah setup Tina Cloud
-  token: null, // isi nanti
+  clientId: 382b9da7-8a36-41f2-938e-b774bbbf6e98, // isi nanti setelah setup Tina Cloud
+  token: baa4d7a613aab5208c80463f05ddc3a17bea8084, // isi nanti
 
   build: {
     outputFolder: "public",
