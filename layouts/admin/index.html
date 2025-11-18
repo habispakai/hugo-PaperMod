@@ -1,0 +1,33 @@
+import { defineConfig } from "tinacms";
+
+export default defineConfig({
+  branch: "master",
+  clientId: "382b9da7-8a36-41f2-938e-b774bbbf6e98",  // ini sudah benar
+  token: "baa4d7a613aab5208c80463f05ddc3a17bea8084",                 // ← GANTI INI SAJA
+
+  build: {
+    outputFolder: "public",
+    publicFolder: "static",
+  },
+  media: {
+    tina: {
+      mediaRoot: "uploads",
+      publicFolder: "static",
+    },
+  },
+  schema: {
+    collections: [
+      {
+        name: "post",
+        label: "Posts",
+        path: "content/posts",
+        format: "md",
+        fields: [
+          { type: "string", name: "title", label: "Judul", isTitle: true, required: true },
+          { type: "datetime", name: "date", label: "Tanggal" },
+          { type: "rich-text", name: "body", label: "Isi", isBody: true },
+        ],
+      },
+    ],
+  },
+});
