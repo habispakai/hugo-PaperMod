@@ -1,0 +1,7 @@
+baseURL = "https://d5qrvu2ns4359.cloudfront.net/"
+languageCode = "en-us"
+title = "Blog Kamu"
+theme = "hugo-PaperMod"
+
+[params]
+  env = "production"
