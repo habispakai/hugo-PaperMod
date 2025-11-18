@@ -1,4 +1,4 @@
-name: Deploy to AWS S3
+name: Deploy Hugo PaperMod Demo to Pages   # ← ganti persis ini
 
 on:
   push:
