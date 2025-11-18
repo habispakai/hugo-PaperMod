@@ -1,7 +1,8 @@
 baseURL = "https://d5qrvu2ns4359.cloudfront.net/"
-languageCode = "en-us"
-title = "Blog Kamu"
-theme = "hugo-PaperMod"
+languageCode = "id-id"
+title = "Blog Saya"
+theme = "github.com/adityatelange/hugo-PaperMod"
 
-[params]
-  env = "production"
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
