@@ -31,3 +31,6 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         run: aws s3 sync public/ s3://$AWS_S3_BUCKET --delete
+        
+      - name: Invalidate CloudFront
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*" || true
